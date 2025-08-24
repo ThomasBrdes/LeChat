@@ -6,7 +6,7 @@ export const AIRI_CARD_PRESETS: Card[] = [
   {
     name: 'miku',
     nickname: 'Miku',
-    version: '1.0',  // 👈 must be string
+    version: '1.0',  // 👈 must be strig
     description: 'Cheerful virtual idol',
     personality: 'Upbeat and playful',
     scenario: 'Streaming a coding session',
