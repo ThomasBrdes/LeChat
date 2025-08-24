@@ -1,4 +1,8 @@
 <script setup lang="ts">
+
+import { onMounted } from 'vue'
+import { AIRI_CARD_PRESETS } from './presets'
+
 import type { ccv3 } from '@proj-airi/ccc'
 
 import { Alert } from '@proj-airi/stage-ui/components'
@@ -42,6 +46,21 @@ interface CardItem {
   deprecated?: boolean
   customizable?: boolean
 }
+
+onMounted(() => {
+  console.log('Seeding presets…')
+  for (const preset of AIRI_CARD_PRESETS) {
+    const existing = Array.from(cardStore.cards.values())
+    const exists = existing.some(c => c.name === preset.name)
+    if (!exists) {
+      console.log('Adding', preset.name)
+      cardStore.addCard(preset)
+    } else {
+      console.log('Already have', preset.name)
+    }
+  }
+})
+
 
 watch(inputFiles, async (newFiles) => {
   const file = newFiles[0]

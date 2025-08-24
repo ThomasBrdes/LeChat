@@ -19,7 +19,7 @@ const { allProvidersMetadata } = storeToRefs(providersStore)
 
 const routeHeaderMetadataMap = computed(() => {
   const map: Record<string, { subtitle?: string, title: string }> = {
-    '/settings/airi-card': {
+    '/settings/-card': {
       subtitle: t('settings.title'),
       title: t('settings.pages.card.title'),
     },
