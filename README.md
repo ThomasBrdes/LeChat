@@ -336,10 +336,6 @@ flowchart TD
 - https://clips.twitch.tv/TriangularAthleticBunnySoonerLater-SXpBk1dFso21VcWD
 - https://www.youtube.com/@NOWA_Mirai
 
-## Project Status
-
-![Repobeats analytics image](https://repobeats.axiom.co/api/embed/a1d6fe2c13ea2bb53a5154435a71e2431f70c2ee.svg 'Repobeats analytics image')
-
 ## Acknowledgements
 
 - [Reka UI](https://github.com/unovue/reka-ui): for designing the documentation site, new landing page is based on this, as well as implementing massive amount of UI components. (shadcn-vue is using Reka UI as the headless, do checkout!)
@@ -349,6 +345,3 @@ flowchart TD
 - [mallorbc/whisper_mic](https://github.com/mallorbc/whisper_mic)
 - [`xsai`](https://github.com/moeru-ai/xsai): Implemented a decent amount of packages to interact with LLMs and models, like [Vercel AI SDK](https://sdk.vercel.ai/) but way small.
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=moeru-ai/airi&type=Date)](https://www.star-history.com/#moeru-ai/airi&Date)
