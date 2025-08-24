@@ -58,7 +58,7 @@ export const useLive2d = defineStore('live2d', () => {
     },
   })
 
-  const defaultModelUrl = '/assets/live2d/models/hiyori_pro_zh.zip'
+  const defaultModelUrl = import.meta.env.BASE_URL + '/assets/live2d/models/hiyori_pro_zh.zip'
   const modelUrl = useLocalStorage<string>('settings/live2d/model-src', defaultModelUrl)
 
   const position = useLocalStorage('settings/live2d/position', { x: 0, y: 0 }) // position is relative to the center of the screen, units are %

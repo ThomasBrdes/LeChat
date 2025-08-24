@@ -293,7 +293,7 @@ defineExpose({
         ref="modelRef"
         :model-src="props.modelSrc"
         :model-file="props.modelFile"
-        idle-animation="/assets/vrm/animations/idle_loop.vrma"
+        idle-animation="import.meta.env.BASE_URL + 'assets/vrm/animations/idle_loop.vrma'"
         :paused="false"
         @load-model-progress="(val) => emit('loadModelProgress', val)"
         @model-ready="handleLoadModelProgress"

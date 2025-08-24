@@ -248,7 +248,7 @@ onMounted(async () => {
         ref="vrmViewerRef"
         :model-src="vrmModelUrl"
         :model-file="vrmModelFile"
-        idle-animation="/assets/vrm/animations/idle_loop.vrma"
+        idle-animation="import.meta.env.BASE_URL + 'assets/vrm/animations/idle_loop.vrma'"
         min-w="50% <lg:full" min-h="100 sm:100" h-full w-full flex-1
         :paused="paused"
         :show-axes="stageViewControlsEnabled"
